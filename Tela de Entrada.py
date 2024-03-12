@@ -11,8 +11,8 @@ screen = pygame.display.set_mode((800, 600),0,32)
 font = pygame.font.SysFont(None, 30)
 
 #colocar som#
-somdefundo = pygame.mixer.music.load('musica.mp3')
-pygame.mixer.music.set_volume(0.15)
+somdefundo = pygame.mixer.music.load('eutentei.mp3')
+pygame.mixer.music.set_volume(0.30)
 pygame.mixer.music.play(-1)
 
 font = pygame.font.SysFont(None, 30)
@@ -30,8 +30,8 @@ click = False
 def main_menu():
     while True:
 
-        tela = pygame.image.load('transferir.jpg')
-        screen.blit(tela,(500,400))
+        tela = pygame.image.load('Cabeçalho.png')
+        screen.blit(tela,(0,0))
         draw_text('Menu Principal', font, (255, 255, 255), screen, 330, 40)
 
         mx, my = pygame.mouse.get_pos()
